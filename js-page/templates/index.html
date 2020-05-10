@@ -1,30 +1,56 @@
-<head>
-    <meta charset="UTF-8">
-    <title>ググる！勉強会！</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/static/css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Sawarabi+Mincho" rel="stylesheet">
-</head>
+<!DOCTYPE html>
 <html>
+<head>
+    <title>ググる！勉強会！</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.3.8/css/swiper.min.css">
+</head>
 <body>
-    <div class="fixed-bg bg01">
-        <h1 id="title-txt">ググる！<p>勉強会</p></h1>
+    <div class="main">
+        <h1 class="title-class">ググる！勉強会！</h1>
+        <p>Webページには、様々な技術が使われています。</p>
+        <p>この勉強会では、HTML、CSS、JSなどの言語を使い、</p>
+        <p>１からWebサイト公開までの工程を体験できます。</p>
+        <img src="https://i.imgur.com/L11kB5t.jpg">
     </div>
 
-    <div class="scroll-bg-1">
-        <p id="explain-title">“ググるは、教養”</p>
-        <p>こんにちは、今年入学しました殿山です。</p>
-        <p>今回、こんな状況であることなどを考え、今この時間を有意義に使おうと思い、</p>
-            <p>私どもが主宰する勉強会を立ち上げました。</p>
-            <p>今回はzoomとオリジナルテキストを使い、３回に分け<span>Webページを１から構築、公開</span>します。</p>
-            <p>第１回では、「HTML、CSS」で画面を作ります。</p>
-            <p>全学年を対象にしていますが、特に、１年生におすすめです。</p>
-            <p>ぜひ参加しませんか？</p>
+<!--
+    画像スライダー「Swiper」
+-->
+
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="https://i.imgur.com/qZ7vRaT.png"></div>
+            <div class="swiper-slide"><img src="https://i.imgur.com/2pjjBz0.png"></div>
+            <div class="swiper-slide"><img src="https://i.imgur.com/qZ7vRaT.png"></div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
     </div>
 
-    <div class="fixed-bg bg02">
-        <h1>日程：５/６から</h1>
-        <div id="date-ex">進度によって変更あり</div>
+<!--
+    セレクトボックスで要素を変える
+-->
+
+    <div class="select">
+        <label class="label-text">あなたが学びたい事は、</label>
+        <select class="select-box" id="select-box" onchange="select_box()">
+            <option value="1">HTML、CSS</option>
+            <option value="2">JavaScript</option>
+            <option value="3">デプロイ</option>
+        </select>
+
+        <div class="display-area">
+            <img src="https://i.imgur.com/qZ7vRaT.png" id="select-img">
+            <div id="message_area"></div>
+        </div>
     </div>
+
+<!--
+    ライブラリ(Swiper)のJSを読み込み
+-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.3.8/js/swiper.min.js"></script>
+    <script src="/static/js/index.js"></script>
 </body>
 </html>
