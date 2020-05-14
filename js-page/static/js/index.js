@@ -16,22 +16,28 @@ var mySwiper = new Swiper ('.swiper-container', {
 
 function select_box() {
 
-    var elem = document.getElementById('select-img')
-    var box = document.getElementById('select-box').value;
+    let elem = document.getElementById('select-img')
+    let box = document.getElementById('select-box').value;
 
-    var message = '';
+    let message = '';
     
-    if(box === '1') {
-        elem.src = 'https://i.imgur.com/2pjjBz0.png'
+    switch(box) {
+      case '1':
+        elem.src = 'https://i.imgur.com/NyuLkeS.jpg';
         message = 'HTMLは、Webページの構造を作ります。CSSは、HTMLを装飾します。';
+        break;
+        
+      case '2':
+        elem.src = 'https://i.imgur.com/XdxpTtV.jpg';
+        message = 'JavaScriptは、Webページに動的な処理を与えます。';
+        break;
+        
+      case '3':
+        elem.src = 'https://i.imgur.com/9jeeKuc.jpg';
+        message = 'Webにおけるデプロイとは、Webページを実際に見れるようにする事です。';
+        break;
+        
     }
-    else if(box === '2') {
-        elem.src = 'https://i.imgur.com/qZ7vRaT.png'
-        message = 'JavaScriptは、Webページに動的な処理を与えます。'
-    }
-    else if(box ==='3') {
-        elem.src = 'https://i.imgur.com/L11kB5t.jpg'
-        message = 'Webにおけるデプロイとは、WebページをURLから見れるようにする事です。'
-    }
+  
     document.getElementById('message_area').innerHTML = message;
 }
