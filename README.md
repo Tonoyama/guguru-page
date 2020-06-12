@@ -3,7 +3,9 @@
 
 [ググる！勉強会：HTML、CSS編【第１回】](https://qiita.com/Tonoyama/items/bb1e3f7bb2383920742d)
 
-[ググる！勉強会：JavaScript編【第２回】](https://hackmd.io/@T7k0V7TMQFelvJKKdo3pww/rJ5JO7x58)
+[ググる！勉強会：JavaScript編【第２回】](https://qiita.com/Tonoyama/items/31b699dd33fa3a47caa0)
+
+[作る！勉強会：デプロイ編【第３回】](https://hackmd.io/@T7k0V7TMQFelvJKKdo3pww/Hkgtmu0q8)
 
 ## 告知ページ
 HTML、CSS編
