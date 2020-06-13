@@ -13,3 +13,8 @@ https://open-campus-7umggk7w6a-an.a.run.app/
 
 JavaScript編
 https://js-page-7umggk7w6a-uc.a.run.app/
+
+デプロイ編
+https://heroku-js.herokuapp.com/
+
+デプロイ編のURLの中身は、JavaScript編と同じです。
